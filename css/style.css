@@ -1,3 +1,147 @@
-body {
-  font-size: 50px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.header__menu {
+  width: 24px;
+  height: 18px;
+  background: url(/img/mobile/header/menu-mobile.png);
+  cursor: pointer;
+}
+
+.hero {
+  background: url(/img/mobile/hero/hero_cat.jpg) no-repeat;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.hero__title {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: normal;
+  font-family: monospace;
+}
+
+.hero__subtitle {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+
+.main {
+  padding: 10px 20px;
+}
+
+.main__green-btn:hover {
+  background-color: #5EAA2F;
+}
+
+.main__green-btn:active {
+  background-color: #5EAA2F;
+}
+
+.main__green-btn {
+  background-color: #68B738;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main__green-btn a:focus {
+  opacity: 0.3;
+}
+
+.main__green-btn a {
+  color: white;
+  padding: 11px 43px;
+}
+
+.program-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 20px;
+  background-color: #F2F2F2;
+}
+
+.program-info h3 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-info p {
+  margin-bottom: 25px;
+}
+
+.program-info__btn {
+  width: 100%;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.program-info__btn a:focus {
+  opacity: 0.3;
+}
+
+.program-info__btn a:hover {
+  background: url(/img/mobile/main/icon_arrow_long.png) right no-repeat;
+}
+
+.program-info__btn span {
+  background: url(/img/mobile/main/icon_arrow_short.png) right no-repeat;
+  padding-right: 45px;
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
 }

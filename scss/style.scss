@@ -1,1 +1,17 @@
-@import "_header"
+@import "_header";
+@import "_hero";
+@import "_main";
+@import "_program-info";
+
+
+.container {
+   max-width: 320px;
+   width: 100%;
+   margin: 0 auto;
+   border: 1px solid red;
+}
+
+a {
+   text-decoration: none;
+}
+
