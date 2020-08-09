@@ -1,0 +1,23 @@
+.hero {
+   background:url(/img/mobile/hero/hero_cat.jpg) no-repeat;
+   text-transform: uppercase;
+    text-align: center;
+    color: white;
+   &__title {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      padding-top: 25px;;
+      font-size: 26px;  //поменять шрифт на 36 когда подключу шрифт//
+      line-height: 26px; // тоже самое //
+      font-weight: normal;
+      font-family: monospace;
+}
+   &__subtitle {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 30px;
+   }
+   
+}

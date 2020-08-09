@@ -1,0 +1,30 @@
+.main {
+   padding: 10px 20px;
+
+   &__green-btn:hover {
+       background-color: #5EAA2F;
+    }
+
+   &__green-btn:active {
+      background-color: #5EAA2F;
+      
+   } 
+   &__green-btn {
+    background-color: #68B738;  
+    line-height: 40px; //верный ли это способ задать высоту кнопке?//
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    
+    a:focus {
+       opacity: 0.3;
+    }
+    a {
+       color: white;
+       padding: 11px 43px; //я уверен это супер костыльный метод! как ты бы эту кнопку застилил ? 
+    }
+   }
+}
+
+
