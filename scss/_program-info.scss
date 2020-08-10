@@ -1,53 +1,59 @@
 .program-info-wrapper {
-   display: flex; 
-   justify-content: space-between;
-   flex-wrap: wrap;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .program-info {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   padding: 20px 20px 0px 20px;
-   margin-bottom: 20px;
-   background-color: #F2F2F2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: oswald-regular, PT-sans, sans-serif;
+  background-color: #f2f2f2;
+  &__title {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+  &__desc {
+    margin-top :25px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  &__btn {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 16px;
+    //font-family: Oswald-regular; мне кажется или дефолтный шрифт более похож на макетный чем этот?
+    text-transform: uppercase;
+    color: black;
+    
+    &:hover {
+      span {
+        background: url(/img/mobile/main/icon_arrow_long.png) right no-repeat;
+      }
+    }
 
-   h3 {
-      display: inline-block;
-      margin: 0;
-      margin-left: 10px;
-      font-size: 20px;
-      line-height: 37px;
-      text-transform: uppercase;
-   }
+    &:focus {
+       span {
+          opacity: 0.3;
+       }
+    }
 
-   p {
-      margin-bottom: 25px;
-   }
-  
-      &__btn {
-      width: 100%;
-  //padding:15px 0; снова лайнг хайтом указал размер кнопки ? ессть ли какие то противопоказания ?
-      line-height: 47px;
-      text-transform: uppercase;
-      color: black;
-      font-size: 16px;
-      border-top: 1px solid #D9D9D9;
-         a:focus { opacity: 0.3;}
-         a:hover {
-         background: url(/img/mobile/main/icon_arrow_long.png) right no-repeat;
-         }  //Почему не срабатывает ховер на паддинги а только на саму ссылку?
-         span {
-            background: url(/img/mobile/main/icon_arrow_short.png) right no-repeat;
-            padding-right: 45px;//почему фон по дефолту и при ховере появляется на одном и то же общем месте?
-          
-
-         }
-      }   
-   }
-
-
-
-
-   
+    span {
+      background: url(/img/mobile/main/icon_arrow_short.png) right no-repeat;
+      padding-right: 45px;
+    }
+  }
+}
