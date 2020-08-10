@@ -1,13 +1,15 @@
-   .header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
-   &__menu {
-      width: 24px;
-      height: 18px;
-      background: url(/img/mobile/header/menu-mobile.png);
-      cursor: pointer;
-   }
-   
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  &__menu {
+    width: 24px;
+    height: 18px;
+    background: url(/img/mobile/header/menu-mobile.png);
+    cursor: pointer;
+  }
 }

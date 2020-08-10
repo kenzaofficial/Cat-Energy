@@ -1,30 +1,35 @@
 .main {
-   padding: 10px 20px;
+  padding-left:  20px;
+  padding-right: 20px;
 
-   &__green-btn:hover {
-       background-color: #5EAA2F;
-    }
+  &__green-btn:hover {
+    background-color: #5eaa2f;
+  }
 
-   &__green-btn:active {
-      background-color: #5EAA2F;
-      
-   } 
-   &__green-btn {
-    background-color: #68B738;  
-    line-height: 40px; //верный ли это способ задать высоту кнопке?//
+  &__green-btn:active {
+    background-color: #5eaa2f;
+  }
+  &__green-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 26px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    
-    
-    a:focus {
-       opacity: 0.3;
+
+    //line-height: 40px; //верный ли это способ задать высоту кнопке?//
+    color: white;
+    background-color: #68b738;
+
+    &:focus {
+      span {
+        opacity: 0.3;
+      }
     }
-    a {
-       color: white;
-       padding: 11px 43px; //я уверен это супер костыльный метод! как ты бы эту кнопку застилил ? 
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      font-family: "Oswald-Regular", serif;
     }
-   }
+  }
 }
-
-
