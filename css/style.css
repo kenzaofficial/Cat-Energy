@@ -53,11 +53,6 @@
   margin-bottom: 30px;
 }
 
-.main {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .main__green-btn:hover {
   background-color: #5eaa2f;
 }
@@ -162,7 +157,7 @@
 
 .features__title {
   margin: 0 0 30px 0;
-  font-family: Oswald;
+  font-family: Oswald-regular, PT-sans,sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -197,6 +192,90 @@
   line-height: 18px;
 }
 
+.example-wrapper {
+  background-color: #eaeaea;
+}
+
+.example-wrapper .container {
+  padding-top: 25px;
+}
+
+.example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: Oswald-regular, PT-sans, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example-results-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.example-results {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 124px;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.example-results__big-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Oswald-regular, PT-sans, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example-results__small-text {
+  position: absolute;
+  max-width: 87px;
+  width: 100%;
+  text-align: center;
+  background-color: #eaeaea;
+  bottom: -15px;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+  z-index: 3;
+}
+
 @font-face {
   font-family: "Oswald-Regular";
   src: url("./fonts/Oswald-Regular.woff2") format("ttf");
@@ -213,7 +292,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid red;
