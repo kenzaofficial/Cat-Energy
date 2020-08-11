@@ -3,6 +3,7 @@
 @import "_main";
 @import "_program-info";
 @import "_features";
+@import "_example";
 @font-face {
   font-family: "Oswald-Regular";
   src: url("./fonts/Oswald-Regular.woff2") format("ttf");
@@ -18,7 +19,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid red;
