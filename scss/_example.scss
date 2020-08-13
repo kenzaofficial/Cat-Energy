@@ -1,10 +1,10 @@
 .example-wrapper {
+   background-color: #eaeaea;
   .container {
 
     padding-top: 25px;
-  }
-  
-  background-color: #eaeaea;
+    padding-bottom: 40px ;
+  } 
 }
 
 .example {
@@ -39,7 +39,8 @@
     text-align: center;
 
     img {
-      width: 100%;
+      max-width: 278px;
+     width: 100%;
     }
   }
 
