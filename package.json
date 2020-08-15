@@ -1,0 +1,25 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "сборка галп",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenzaofficial/Cat-Energy.git"
+  },
+  "author": "kenzaofficial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenzaofficial/Cat-Energy/issues"
+  },
+  "homepage": "https://github.com/kenzaofficial/Cat-Energy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2"
+  }
+}
