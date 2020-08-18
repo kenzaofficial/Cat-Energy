@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="./build/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__logo">
           <a href="/index.html"
-            ><img src="/img/mobile/header/logo-mobile.png " alt="logo"
+            ><img src="./src/img/mobile/header/logo-mobile.png " alt="logo"
           /></a>
         </div>
         <div class="header__title">
           <a href="/index.html"
-            ><img src="/img/mobile/header/logo2_mobile.png" alt="cat-energy"
+            ><img src="./src/img/mobile/header/logo2_mobile.png" alt="cat-energy"
           /></a>
         </div>
         <div class="header__menu"></div>
@@ -24,7 +24,7 @@
     </header>
     <section class="hero">
       <div class="hero__bg-wrap">
-        <img src="./img/mobile/hero//hero_cat.jpg" alt="" class="hero__bg" />
+        <img src="./src/img/mobile/hero//hero_cat.jpg" alt="" class="hero__bg" />
       </div>
       <div class="container">
         <h1 class="hero__title">
@@ -32,7 +32,7 @@
         </h1>
         <span class="hero__subtitle">Занялся собой? Займись котом!</span>
         <div class="hero__image">
-          <img src="/img/mobile/hero/index-can-mobile .png" />
+          <img src="./src/img/mobile/hero/index-can-mobile.png" />
         </div>
         <a href="#" class="main__green-btn">
           <span>подобрать программу</span>
@@ -42,7 +42,7 @@
     <main class="main">
       <div class="program-info-wrapper container">
         <div class="program-info">
-          <img src="/img/mobile/main/cat_slim.png" />
+          <img src="./src/img/mobile/main/cat_slim.png" />
           <h3 class="program-info__title">Похудение</h3>
           <p class="program-info__desc">
             Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -52,7 +52,7 @@
           <a class="program-info__btn" href="#"><span>Каталог slim</span></a>
         </div>
         <div class="program-info">
-          <img src="/img/mobile/main/cat_pro.png" />
+          <img src="./src/img/mobile/main/cat_pro.png" />
           <h3 class="program-info__title">Набор массы</h3>
           <p class="program-info__desc">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -67,7 +67,7 @@
         <h4 class="features__title">Как это работает</h4>
         <div class="features__list">
           <div class="features__icon">
-            <img src="/img/mobile/features/icon_leaf.png" />
+            <img src="./src/img/mobile/features/icon_leaf.png" />
           </div>
           <p class="features__text">
             Функциональное питание содержит только полезные питательные
@@ -76,7 +76,7 @@
         </div>
         <div class="features__list">
           <div class="features__icon">
-            <img src="/img/mobile/features/icon_tub.png" />
+            <img src="./src/img/mobile/features/icon_tub.png" />
           </div>
           <p class="features__text">
             Выпускается в виде порошка, который нужно лишь залить кипятком и
@@ -86,7 +86,7 @@
         <div class="features__list">
           <!--Это элемент или следует написать features-list как блок? и оттуда уже будут идти 2 елемента иконка, (картинка без класса) и текст -->
           <div class="features__icon">
-            <img src="/img/mobile/features/icon_eat.png" />
+            <img src="./src/img/mobile/features/icon_eat.png" />
           </div>
           <p class="features__text">
             Замените один-два приема обычной еды на наше функциональное питание.
@@ -94,7 +94,7 @@
         </div>
         <div class="features__list">
           <div class="features__icon">
-            <img src="/img/mobile/features/icon_alarm.png" />
+            <img src="./src/img/mobile/features/icon_alarm.png" />
           </div>
           <p class="features__text">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
@@ -128,7 +128,7 @@
           </div>
           <span class="example__price-text">Затраты на питание: 15 000 руб.</span>
           <div class="example__image">
-            <img src="/img/mobile/example/cat.png"> 
+            <img src="./src/img/mobile/example/cat.png"> 
           </div>
           <div class="example-progress">
             <div class="example-progress__inner">
@@ -139,7 +139,7 @@
       <div class="map">
         <div class="map__title container">
           <p class="map__invite-text">Приглашаем к сотрудничеству дилеров!</p>
-           @@include('_header.html')
+           <!-- @@include('_header.html') -->
           <p class="map__contacts-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="map__content"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.627415592431!2d30.32113296624523!3d59.9383244318761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTlcOCDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1597277201758!5m2!1sru!2sua" width="0" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
@@ -147,7 +147,7 @@
     </main>
     <footer class="footer container">
       <div class="footer__logo">
-        <img src="/img/mobile/header/logo2_mobile.png">
+        <img src="./src/img/mobile/header/logo2_mobile.png">
       </div>
       <div class="footer__social"></div>
       <div class="footer__copyright"></div>
