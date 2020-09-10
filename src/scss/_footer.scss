@@ -1,2 +1,54 @@
+.footer {
+   display: flex;
+   flex-direction: column;
+   min-width: 130px;
+   &__logo {
+      padding-top: 40px;
+      padding-bottom: 30px;
+      border-bottom:1px solid #D9D9D9;
+      text-align: center;
+   }
+   &__social {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 20px 0;
+      min-width: 120px;
+      width: 100%;
+      border-bottom:1px solid #D9D9D9;
+   }
+   &-social__item {
+      padding: 11px 0;
+      display: inline-block;
+      width: 30px;
+      background-image: url(/src/img/mobile/footer/social_icons.png);
+      background-position: 4px;   //не сбивает ли это столку?
+      cursor: pointer;
+      &:nth-child(2){
+      background-position: -46px;
+      }
+      &:last-child {
+      background-position: 30px;
+      }
+   }
+    &__copyright {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;;
+       padding-top: 23px;
+       padding-bottom: 23px;
+       &-text {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 16px;
+       font-weight: 500;
+       color: #444444;  
+       }
+       &-link {
+          width: 27px;
+          height: 34px;
+          background-image: url(/src/img/mobile/footer/html_academy.png);
+       }
+    }
+}
 
-   
+
