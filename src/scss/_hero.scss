@@ -1,8 +1,13 @@
 .hero {
- 
   position: relative;
   text-align: center;
-  // background: url(/img/mobile/hero/hero_cat.jpg) no-repeat top center;
+   @media (min-width:767px) {
+     min-height: 800px;
+     text-align: start;
+     background: url(../src/img/tablet/index-can-tablet.png) no-repeat;
+     background-position:bottom
+   }
+  
   &__bg-wrap {
     position: absolute;
     width: 100%;
@@ -12,6 +17,9 @@
 
   &__bg {
      max-width: 100%;
+     @media (min-width:767px){
+     display: none;
+     }
   }
   &__title {
     max-width: 250px;
@@ -20,14 +28,55 @@
     font-size: 26px; //поменять шрифт на 36 когда подключу шрифт//
     line-height: 26px; // тоже самое //
     font-weight: normal;
-    color: white;
+    color: black;
+    font-family: "Oswald-Regular", sans-serif;
+    @media (min-width:767px) {
+      margin: 25px 0;
+      font-size: 50px;
+      line-height: 50px;
+      max-width: 520px;
+    }
   }
   &__subtitle {
     display: inline-block;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     margin-bottom: 30px;
+    @media (min-width:767px) {
+      font-size: 20px;
+     }
+  }
+  &__image {
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+  &__green-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #68b738;
+    @media (min-width:767px) {
+      max-width: 246px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 18px 26px
+
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width:767px) {
+      padding-left: 120px;
+    }
   }
 }
+
+

@@ -6,11 +6,19 @@
     align-items: center;
     padding: 10px 20px;
   }
+
+  &__logo {
+    @media(min-width:767px){ 
+    }
+  }
   
   &__menu {
     width: 24px;
     height: 18px;
     background: url(../src/img/mobile/header/menu-mobile.png);
     cursor: pointer;
+    @media (min-width:767px){
+      }
   }
 }
+
