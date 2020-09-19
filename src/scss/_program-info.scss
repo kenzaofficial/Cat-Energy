@@ -24,6 +24,7 @@
   }
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   align-items: center;
   padding: 20px 20px 0px 20px;
   font-size: 14px;
@@ -49,7 +50,8 @@
   &__image img {
     display: none;
     @media (min-width:767px) {
-    display: inline;
+    display: inline-block;
+    margin-left: 150px; //????????????????????????????????????//
     }
   }
 
