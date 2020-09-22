@@ -1,5 +1,67 @@
 .features {
   padding-bottom: 25px;
+  &__list {
+    @media (min-width:767px){
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      border-bottom: 1px solid ; // как правильно ее растянуть на фул?
+    }
+  }
+  &__item {
+    border: 1px solid blue;
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+    @media (min-width:767px){
+      display: inline-block;
+      max-width: 50%;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 95px;
+       padding-bottom: 40px;
+       background-image: url(/src/img/tablet/1.png);
+       background-repeat: no-repeat;
+       background-position: top;
+       background-size: auto 100%;
+    }
+  }
+  &__content {
+   display: flex;
+   align-items: center;
+    width: 100%;
+    @media (min-width:767px){
+      max-width: 230px;
+      width: 100%;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width:767px) {
+      margin-right: 0;
+      background-image: url(/src/img/tablet/2.png);
+      background-size: auto 100%;
+    }
+  }
+   &__item:nth-child(3) {
+    @media (min-width:767px) {
+       margin-bottom: 60px;
+      background-image: url(/src/img/tablet/3.png);
+      background-size: auto 100%;
+    }
+  }
+  &__item:last-child {
+    @media (min-width:767px) {
+      margin-right: 0;
+      margin-bottom: 60px;
+      background-image: url(/src/img/tablet/4.png);
+      background-size: auto 100%;
+
+    }
+  }
+
   &__title {
     margin: 0 0 30px 0;
     font-family: Oswald-regular, PT-sans,sans-serif;
@@ -7,12 +69,10 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 40px;
-  }
-
-  &__list {
-    display: flex;
-    margin-bottom: 18px;
-    align-items: center;
+    @media (min-width:767px){
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
   }
 
   &__icon {
@@ -22,7 +82,11 @@
     margin-right: 20px;
     text-align: center;
     background-color: #68b738;
-  
+   @media (min-width:767px){
+     max-width: 80px;
+     padding: 23px 20px;
+     margin-bottom: 30px;
+   }
   }
 
   &__text {
@@ -33,5 +97,6 @@
     font-size: 14px;
     line-height: 18px;
   }
+  
 }
  

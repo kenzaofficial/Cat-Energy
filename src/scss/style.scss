@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Oswald-Regular";
-  src: url("./fonts/Oswald-Regular.woff2") format("ttf");
+  src: url("/src/fonts/Oswald-Regular.ttf") format("ttf");
 }
 
 * {
@@ -26,7 +26,6 @@ body {
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  border: 1px solid red;
   @media (min-width:767px) {
     padding-left: 30px;
     padding-right: 30px;
