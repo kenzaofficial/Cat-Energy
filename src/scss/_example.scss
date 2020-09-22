@@ -8,21 +8,52 @@
 }
 
 .example {
+  @media (min-width:767px){
+     &__slider{
+       margin: 0 auto;
+       position: relative;
+        width:34px;
+        height: 34px;
+        background-color: #68B738;
+        border-radius: 50%;
+        border: 13px solid white;
+        z-index: 1;
+        bottom: -23px;
+        right: 0;
+        box-shadow: 0 1px 3px 3px  #cdcdcd;
+        cursor: pointer;
+    }
+  }
+
+  &__inner {
+    @media(min-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   &__title {
-
     margin: 0;
     margin-bottom: 25px;
     font-family: Oswald-regular, PT-sans, sans-serif;
     font-size: 36px;
     line-height: 40px;
+    @media(min-width: 767px){
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   &__text {
     margin: 0;
     margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    @media(min-width: 767px){
+     font-size: 16px; 
+    }
   }
 
   &__price-text {
@@ -34,23 +65,28 @@
     font-family: Oswald-regular, PT-sans, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    @media(min-width: 767px) {
+      max-width: 180px;
+    }
   }
   &__image {
     text-align: center;
 
     img {
-      max-width: 278px;
      width: 100%;
     }
   }
 
-  &-progress {// как понять что лучше? здесь делать паддинги или сделать марджины блоку снизу?
+  &-progress {
     position: relative;
     width: 30%;
     margin: 0 auto;
     padding: 3px  6px;
     border: 1px solid #cdcdcd;
     border-radius: 6px;
+    @media (min-width:767px) {
+      border: none;
+    }
 
     &::before,&::after{
       position: absolute;
@@ -81,6 +117,10 @@
       width: 50%;
       background-color: #68B738;
       border-radius: 6px;
+      @media (min-width:767px) {
+        background-color: #DCDCDC;
+        width: 100%;
+      }
     }
   
   }
@@ -93,6 +133,10 @@
   max-width: 280px;
   width: 100%;
   margin-bottom: 35px;
+   border: 1px solid red;
+   @media (min-width:767px) {
+     margin: 0;
+   }
 
   .example-results {
     position: relative;
