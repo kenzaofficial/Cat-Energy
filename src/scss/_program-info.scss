@@ -7,6 +7,15 @@
 }
 
 .program-info {  
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  background-color: #f2f2f2;
   
   &:first-child {
     margin-bottom: 20px;
@@ -21,16 +30,9 @@
   }
   @media (min-width:767px) {
     flex-wrap: nowrap;
+    font-size: 16px;
   }
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  padding: 20px 20px 0px 20px;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: oswald-regular, PT-sans, sans-serif;
-  background-color: #f2f2f2;
+  
   &__title {
     display: inline-block;
     margin: 0;
@@ -42,6 +44,7 @@
     margin-top :25px;
     margin-bottom: 0;
     padding-bottom: 25px;
+    font-family: "arial", sans-serif;
     border-bottom: 1px solid #d9d9d9;
     @media (min-width:767px) {
       border-bottom: none;
@@ -60,7 +63,7 @@
     padding-top: 19px;
     padding-bottom: 19px;
     font-size: 16px;
-    //font-family: Oswald-regular; мне кажется или дефолтный шрифт более похож на макетный чем этот?
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: black;
     

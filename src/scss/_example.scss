@@ -38,7 +38,7 @@
   &__title {
     margin: 0;
     margin-bottom: 25px;
-    font-family: Oswald-regular, PT-sans, sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 36px;
     line-height: 40px;
     @media(min-width: 767px){
@@ -62,7 +62,7 @@
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: Oswald-regular, PT-sans, sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 14px;
     line-height: 20px;
     @media(min-width: 767px) {
@@ -82,6 +82,7 @@
     width: 30%;
     margin: 0 auto;
     padding: 3px  6px;
+    font-family: "Oswald", sans-serif;
     border: 1px solid #cdcdcd;
     border-radius: 6px;
     @media (min-width:767px) {
@@ -90,7 +91,6 @@
 
     &::before,&::after{
       position: absolute;
-      font-family: oswald-regular,sans-serif;
       font-size: 14px;
       line-height: 20px;
       text-transform: uppercase;
@@ -99,7 +99,6 @@
     &::before {
       position: absolute;
       content: "было";
-      font-family: oswald-regular,sans-serif;
       font-size: 14px;
       line-height: 20px;
       text-transform: uppercase;
@@ -133,7 +132,6 @@
   max-width: 280px;
   width: 100%;
   margin-bottom: 35px;
-   border: 1px solid red;
    @media (min-width:767px) {
      margin: 0;
    }
@@ -153,7 +151,7 @@
     &__big-text {
       padding-top: 15px;
       padding-bottom: 15px;
-      font-family: Oswald-regular, PT-sans, sans-serif;
+      font-family: "Oswald", sans-serif;
       font-size: 24px;
       line-height: 24px;
       text-transform: uppercase;

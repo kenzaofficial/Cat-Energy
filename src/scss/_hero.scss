@@ -4,8 +4,7 @@
    @media (min-width:767px) {
      min-height: 800px;
      text-align: start;
-     background: url(../src/img/tablet/index-can-tablet.png) no-repeat;
-     background-position:bottom
+     background: url(../src/img/tablet/index-can-tablet.png) no-repeat bottom;
    }
   
   &__bg-wrap {
@@ -29,7 +28,7 @@
     line-height: 26px; // тоже самое //
     font-weight: normal;
     color: black;
-    font-family: "Oswald-Regular", sans-serif;
+    font-family: "Oswald", sans-serif;
     @media (min-width:767px) {
       margin: 25px 0;
       font-size: 50px;
@@ -39,6 +38,7 @@
   }
   &__subtitle {
     display: inline-block;
+    font-family: "Oswald", sans-serif;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
@@ -54,20 +54,16 @@
     }
   }
   &__green-btn {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 26px;
+    padding: 12px 26px;
     margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: white;
     background-color: #68b738;
     @media (min-width:767px) {
       max-width: 246px;
-      width: 100%;
       margin-top: 20px;
-      padding: 18px 26px
-
     }
   }
   .container {

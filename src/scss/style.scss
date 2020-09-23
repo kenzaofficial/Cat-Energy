@@ -8,25 +8,19 @@
 @import "_map";
 @import "_footer";
 
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url("/src/fonts/Oswald-Regular.ttf") format("ttf");
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Oswald-Regular", serif;
-  
+  font-family: "Oswald", sans-serif serif;
 }
 
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  @media (min-width:767px) {
+  @media (min-width: 767px) {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -34,15 +28,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-@mixin font($font_name, $file_name, $weight, $style) {
-
-@font-face {
-font-family: $font_name;
-font-display: swap;
-src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-font-weight: #{$weight};
-font-style: #{$style};
-}
 }
