@@ -1,6 +1,6 @@
 .main {
- // padding-left:  20px;
- // padding-right: 20px;
+  // padding-left:  20px;
+  // padding-right: 20px;
 
   &__green-btn:hover {
     background-color: #5eaa2f;
@@ -9,16 +9,15 @@
   &__green-btn:active {
     background-color: #5eaa2f;
   }
-  
 
-    &:focus {
-      span {
-        opacity: 0.3;
-      }
-    }
+  &:focus {
     span {
-      font-size: 14px;
-      line-height: 18px;
-      font-family: "Oswald", serif;
+      opacity: 0.3;
     }
   }
+  span {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Oswald", serif;
+  }
+}

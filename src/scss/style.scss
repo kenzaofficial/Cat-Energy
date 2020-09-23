@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: "Oswald", sans-serif serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
@@ -28,4 +28,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #e6e6e6;
+  border: none;
+  margin-bottom: 20px;
 }
