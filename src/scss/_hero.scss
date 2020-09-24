@@ -1,9 +1,11 @@
 .hero {
   position: relative;
   text-align: center;
+  color: white;
   @media (min-width: 767px) {
     min-height: 800px;
     text-align: start;
+    color: black;
     background: url(../src/img/tablet/index-can-tablet.png) no-repeat bottom;
   }
 
@@ -19,18 +21,21 @@
     @media (min-width: 767px) {
       display: none;
     }
+    @media (min-width:1190px) {
+      display: inline;
+    }
   }
   &__title {
     max-width: 250px;
     width: 100%;
-    margin: 25px auto;
-    font-size: 26px; //поменять шрифт на 36 когда подключу шрифт//
-    line-height: 26px; // тоже самое //
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 36px; 
+    line-height: 36px; 
     font-weight: normal;
-    color: black;
     font-family: "Oswald", sans-serif;
     @media (min-width: 767px) {
-      margin: 30px 0;
+      margin-left: 0;
       font-size: 60px;
       line-height: 50px;
       max-width: 520px;
@@ -42,20 +47,23 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-bottom: 30px;
     @media (min-width: 767px) {
-      font-size: 20px;
       width: 100%;
       margin-bottom: 40px;
+      font-size: 20px;
+      color: black;
+        
     }
   }
-  &__image {
+  &__image {   
     @media (min-width: 767px) {
       display: none;
     }
   }
   &__green-btn {
+    display: block;
     padding: 12px 26px;
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
@@ -71,6 +79,7 @@
       font-size: 20px;
     }
   }
+
   .container {
     @media (min-width: 767px) {
       padding-left: 120px;
