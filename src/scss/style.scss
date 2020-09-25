@@ -15,6 +15,7 @@
 body {
   margin: 0;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -24,15 +25,31 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+  @media (min-width:1200px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 hr {
+  display: none;
   height: 1px;
   background-color: #e6e6e6;
   border: none;
   margin-bottom: 20px;
+  @media(min-width: 767px) {
+    display: inline-block;
+    width: 100%;
+  }
+  @media (min-width:1200px) {
+      display: none;
+    }
 }

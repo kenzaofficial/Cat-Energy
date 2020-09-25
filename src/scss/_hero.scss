@@ -1,36 +1,60 @@
 .hero {
+  
+ // border: 3px solid blue;
   position: relative;
   text-align: center;
+  color: white;
   @media (min-width: 767px) {
-    min-height: 800px;
+    min-height: 700px;
     text-align: start;
-    background: url(../src/img/tablet/index-can-tablet.png) no-repeat bottom;
+    color: black;
+    background: url(/src/img/desktop/index-can.png) no-repeat bottom;
+  }
+  
+  @media (min-width:1200px) {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
 
   &__bg-wrap {
+   // border: 3px solid yellow;
     position: absolute;
     width: 100%;
-    background-color: #5eaa2f;
+    background-color: #64A83B;
     z-index: -1;
+    @media (min-width:1200px) {
+      width: 50%;
+      text-align: right;;
+      position: static;
+      order: 1;
+    }
   }
 
   &__bg {
+   // border: 2px solid red;
     max-width: 100%;
     @media (min-width: 767px) {
       display: none;
+    }
+    @media (min-width:1200px) {
+      display: inline;
+      max-width: 100%;
+      
     }
   }
   &__title {
     max-width: 250px;
     width: 100%;
-    margin: 25px auto;
-    font-size: 26px; //поменять шрифт на 36 когда подключу шрифт//
-    line-height: 26px; // тоже самое //
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 36px; 
+    line-height: 36px; 
     font-weight: normal;
-    color: black;
     font-family: "Oswald", sans-serif;
     @media (min-width: 767px) {
-      margin: 30px 0;
+      margin-left: 0;
+      padding-bottom: 35px;
       font-size: 60px;
       line-height: 50px;
       max-width: 520px;
@@ -42,20 +66,23 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-bottom: 30px;
     @media (min-width: 767px) {
-      font-size: 20px;
       width: 100%;
       margin-bottom: 40px;
+      font-size: 20px;
+      color: black;
+        
     }
   }
-  &__image {
+  &__image {   
     @media (min-width: 767px) {
       display: none;
     }
   }
   &__green-btn {
+    display: block;
     padding: 12px 26px;
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
@@ -71,9 +98,14 @@
       font-size: 20px;
     }
   }
+
   .container {
+   // border: 2px solid black;
     @media (min-width: 767px) {
       padding-left: 120px;
     }
+    @media (min-width:1200px) {
+    padding-left: 190px;
   }
+}
 }
